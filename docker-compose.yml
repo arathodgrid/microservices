@@ -124,6 +124,19 @@ services:
     depends_on:
       - eureka-server
 
+  resilience-service:
+    build:
+      context: ./resilience-service
+      dockerfile: Dockerfile
+    container_name: resilience-service
+    ports:
+      - "8016:8086"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    depends_on:
+      - eureka-server
+
   # Observability
   zipkin:
     image: openzipkin/zipkin

@@ -36,6 +36,7 @@
         <module>library-service</module>
         <module>load-balancer-service</module>
         <module>monitoring-service</module>
+        <module>resilience-service</module>
     </modules>
 
     <properties>
