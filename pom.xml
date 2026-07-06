@@ -34,6 +34,7 @@
         <module>user-service</module>
         <module>book-service</module>
         <module>library-service</module>
+        <module>load-balancer-service</module>
     </modules>
 
     <properties>
