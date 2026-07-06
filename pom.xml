@@ -35,6 +35,7 @@
         <module>book-service</module>
         <module>library-service</module>
         <module>load-balancer-service</module>
+        <module>monitoring-service</module>
     </modules>
 
     <properties>
